@@ -1,0 +1,450 @@
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@mixin translationToCenter($name){
+  $heightRow1:140px;
+  $heightRow2:-15px;
+  $heightRow3:-170px;
+
+  $widthCol1:355px;
+  $widthCol2:140px;
+  $widthCol3:-75px;
+  $widthCol4:-295px;
+
+
+  @keyframes col1Row1 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol1 - 235px, calc $heightRow1 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol1 - 215px, calc $heightRow1 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol1 - 190px, calc $heightRow1 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol1 - 165px, calc $heightRow1 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol1 - 140px, calc $heightRow1 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol1 - 115px, calc $heightRow1 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol1 - 90px, calc $heightRow1 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 65px, calc $heightRow1 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 40px, calc $heightRow1 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 25px, calc $heightRow1 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1)}
+    35% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow1) rotate(360deg)}
+  }
+  @keyframes col2Row1 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol2 - 235px, calc $heightRow1 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol2 - 215px, calc $heightRow1 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol2 - 190px, calc $heightRow1 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol2 - 165px, calc $heightRow1 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol2 - 140px, calc $heightRow1 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol2 - 115px, calc $heightRow1 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol2 - 90px, calc $heightRow1 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 65px, calc $heightRow1 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 40px, calc $heightRow1 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 25px, calc $heightRow1 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1)}
+    35% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow1) rotate(360deg)}
+  }
+  @keyframes col3Row1 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol3 - 235px, calc $heightRow1 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol3 - 215px, calc $heightRow1 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol3 - 190px, calc $heightRow1 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol3 - 165px, calc $heightRow1 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol3 - 140px, calc $heightRow1 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol3 - 115px, calc $heightRow1 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol3 - 90px, calc $heightRow1 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 65px, calc $heightRow1 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 40px, calc $heightRow1 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 25px, calc $heightRow1 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1)}
+    35% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow1) rotate(360deg)}
+  }
+  @keyframes col4Row1 {
+    0% { transform: scale(0.7,0.7) translate(calc$widthCol4 - 235px, calc $heightRow1 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc$widthCol4 - 215px, calc $heightRow1 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc$widthCol4 - 190px, calc $heightRow1 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol4 - 165px, calc $heightRow1 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol4 - 140px, calc $heightRow1 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol4 - 115px, calc $heightRow1 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol4 - 90px, calc $heightRow1 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 65px, calc $heightRow1 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 40px, calc $heightRow1 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 25px, calc $heightRow1 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1)}
+    35% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow1) rotate(360deg)}
+  }
+  @keyframes col1Row2 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol1 - 235px, calc $heightRow2 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol1 - 215px, calc $heightRow2 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol1 - 190px, calc $heightRow2 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol1 - 165px, calc $heightRow2 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol1 - 140px, calc $heightRow2 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol1 - 115px, calc $heightRow2 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol1 - 90px, calc $heightRow2 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 65px, calc $heightRow2 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 40px, calc $heightRow2 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 25px, calc $heightRow2 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2)}
+    35% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow2) rotate(360deg)}
+  }
+  @keyframes col2Row2 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol2 - 235px, calc $heightRow2 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol2 - 215px, calc $heightRow2 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol2 - 190px, calc $heightRow2 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol2 - 165px, calc $heightRow2 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol2 - 140px, calc $heightRow2 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol2 - 115px, calc $heightRow2 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol2 - 90px, calc $heightRow2 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 65px, calc $heightRow2 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 40px, calc $heightRow2 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 25px, calc $heightRow2 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2)}
+    35% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow2) rotate(360deg)}
+  }
+  @keyframes col3Row2 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol3 - 235px, calc $heightRow2 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol3 - 215px, calc $heightRow2 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol3 - 190px, calc $heightRow2 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol3 - 165px, calc $heightRow2 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol3 - 140px, calc $heightRow2 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol3 - 115px, calc $heightRow2 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol3 - 90px, calc $heightRow2 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 65px, calc $heightRow2 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 40px, calc $heightRow2 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 25px, calc $heightRow2 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2)}
+    35% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow2) rotate(360deg)}
+  }
+  @keyframes col4Row2 {
+    0% { transform: scale(0.7,0.7) translate(calc$widthCol4 - 235px, calc $heightRow2 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc$widthCol4 - 215px, calc $heightRow2 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc$widthCol4 - 190px, calc $heightRow2 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol4 - 165px, calc $heightRow2 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol4 - 140px, calc $heightRow2 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol4 - 115px, calc $heightRow2 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol4 - 90px, calc $heightRow2 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 65px, calc $heightRow2 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 40px, calc $heightRow2 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 25px, calc $heightRow2 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2)}
+    35% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow2) rotate(360deg)}
+  }
+  @keyframes col1Row3 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol1 - 235px, calc $heightRow3 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol1 - 215px, calc $heightRow3 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol1 - 190px, calc $heightRow3 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol1 - 165px, calc $heightRow3 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol1 - 140px, calc $heightRow3 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol1 - 115px, calc $heightRow3 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol1 - 90px, calc $heightRow3 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 65px, calc $heightRow3 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 40px, calc $heightRow3 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol1 - 25px, calc $heightRow3 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3)}
+    35% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol1, $heightRow3) rotate(360deg)}
+  }
+  @keyframes col2Row3 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol2 - 235px, calc $heightRow3 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol2 - 215px, calc $heightRow3 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol2 - 190px, calc $heightRow3 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol2 - 165px, calc $heightRow3 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol2 - 140px, calc $heightRow3 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol2 - 115px, calc $heightRow3 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol2 - 90px, calc $heightRow3 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 65px, calc $heightRow3 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 40px, calc $heightRow3 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol2 - 25px, calc $heightRow3 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3)}
+    35% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol2, $heightRow3) rotate(360deg)}
+  }
+  @keyframes col3Row3 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol3 - 235px, calc $heightRow3 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol3 - 215px, calc $heightRow3 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol3 - 190px, calc $heightRow3 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol3 - 165px, calc $heightRow3 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol3 - 140px, calc $heightRow3 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol3 - 115px, calc $heightRow3 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol3 - 90px, calc $heightRow3 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 65px, calc $heightRow3 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 40px, calc $heightRow3 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol3 - 25px, calc $heightRow3 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3)}
+    35% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol3, $heightRow3) rotate(360deg)}
+  }
+  @keyframes col4Row3 {
+    0% { transform: scale(0.7,0.7) translate(calc $widthCol4 - 235px, calc $heightRow3 - 120px)}
+    5% { transform: scale(0.8,0.8) translate(calc $widthCol4 - 215px, calc $heightRow3 - 110px)}
+    7% { transform: scale(0.9,0.9) translate(calc $widthCol4 - 190px, calc $heightRow3 - 100px)}
+    10% { transform: scale(1,1) translate(calc $widthCol4 - 165px, calc $heightRow3 - 80px)}
+    13% { transform: scale(1.1,1.1) translate(calc $widthCol4 - 140px, calc $heightRow3 - 60px)}
+    17% { transform: scale(1.2,1.2) translate(calc $widthCol4 - 115px, calc $heightRow3 - 50px)}
+    20% { transform: scale(1.3,1.3) translate(calc $widthCol4 - 90px, calc $heightRow3 - 40px)}
+    23% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 65px, calc $heightRow3 - 30px)}
+    27% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 40px, calc $heightRow3 - 20px)}
+    31% { transform: scale(1.4,1.4) translate(calc $widthCol4 - 25px, calc $heightRow3 - 10px)}
+    33% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3)}
+    35% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(10deg)}
+    39% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(40deg)}
+    44% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(90deg)}
+    49% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(120deg)}
+    56% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(160deg)}
+    61% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(210deg)}
+    67% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(260deg)}
+    71% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(310deg)}
+    76% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(360deg)}
+    95% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(360deg)}
+    100% { transform: scale(1.4,1.4) translate($widthCol4, $heightRow3) rotate(360deg)}
+  }
+  position: relative;
+  z-index: 50;
+  animation: $name 2s;
+  animation-iteration-count: 1;
+}
+
+body {
+  background: linear-gradient(to bottom, grey, darkgray);
+  padding: 15px;
+  .container-fluid {
+    background-color: gainsboro;
+    text-align: center;
+    .row {
+      div {
+        a {
+          img {
+            width: 200px;
+            border: 5px solid white;
+            &:hover {
+              animation: shake 0.8s;
+              animation-iteration-count: infinite;
+              z-index: 300;
+            }
+          }
+        }
+      }
+      .col1.row1 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col1Row1);
+            }
+          }
+        }
+      }
+      .col2.row1 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col2Row1);
+            }
+          }
+        }
+      }
+      .col3.row1 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col3Row1);
+            }
+          }
+        }
+      }
+      .col4.row1 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col4Row1);
+            }
+          }
+        }
+      }
+      .col1.row2 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col1Row2);
+            }
+          }
+        }
+      }
+      .col2.row2 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col2Row2);
+            }
+          }
+        }
+      }
+      .col3.row2 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col3Row2);
+            }
+          }
+        }
+      }
+      .col4.row2 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col4Row2);
+            }
+          }
+        }
+      }
+      .col1.row3 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col1Row3);
+            }
+          }
+        }
+      }
+      .col2.row3 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col2Row3);
+            }
+          }
+        }
+      }
+      .col3.row3 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col3Row3);
+            }
+          }
+        }
+      }
+      .col4.row3 {
+        a {
+          &:focus {
+            img {
+              @include translationToCenter(col4Row3);
+            }
+          }
+        }
+      }
+    }
+  }
+}

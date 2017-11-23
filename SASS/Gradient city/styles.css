@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(to bottom, #a5a5a5, white); }
+  body #wrapper {
+    border: 3px double grey;
+    width: 1224px;
+    height: 1530px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center; }
+    body #wrapper header h1, body #wrapper header h2, body #wrapper header h3, body #wrapper footer h1, body #wrapper footer h2, body #wrapper footer h3 {
+      color: grey; }
+    body #wrapper ul {
+      list-style: none; }
+    body #wrapper a {
+      font-size: 20px;
+      color: grey;
+      text-decoration: none; }
+    body #wrapper nav ul li {
+      display: inline-block;
+      padding: 5px 15px; }
+      body #wrapper nav ul li a {
+        border: 3px double grey;
+        width: 100px;
+        height: 35px;
+        display: block;
+        line-height: 35px; }
+        body #wrapper nav ul li a:hover {
+          background: linear-gradient(to bottom, #a5a5a5, white);
+          color: white; }
+    body #wrapper section, body #wrapper footer, body #wrapper header {
+      border: 2.5px double grey;
+      margin: 15px; }
+      body #wrapper section header, body #wrapper footer header, body #wrapper header header {
+        border: none; }
+        body #wrapper section header h1, body #wrapper footer header h1, body #wrapper header header h1 {
+          font-size: 20px;
+          font-weight: normal;
+          text-decoration: underline; }
+      body #wrapper section h1, body #wrapper footer h1, body #wrapper header h1 {
+        font-size: 40px; }
+      body #wrapper section h3, body #wrapper footer h3, body #wrapper header h3 {
+        font-size: 20px;
+        font-weight: normal;
+        text-decoration: underline; }
+      body #wrapper section h2, body #wrapper footer h2, body #wrapper header h2 {
+        font-size: 15px;
+        font-weight: normal; }
+      body #wrapper section article, body #wrapper footer article, body #wrapper header article {
+        border: 1px solid #a5a5a5;
+        margin: 15px; }
+        body #wrapper section article .innerContainer, body #wrapper footer article .innerContainer, body #wrapper header article .innerContainer {
+          display: flex;
+          justify-content: center;
+          margin: 15px; }
+          body #wrapper section article .innerContainer div, body #wrapper footer article .innerContainer div, body #wrapper header article .innerContainer div {
+            height: 180px;
+            width: 140px;
+            border-radius: 15%; }
+      body #wrapper section.linear article:nth-of-type(1) .purple, body #wrapper footer.linear article:nth-of-type(1) .purple, body #wrapper header.linear article:nth-of-type(1) .purple {
+        background: linear-gradient(to bottom, #3c003f, white); }
+      body #wrapper section.linear article:nth-of-type(1) .blue, body #wrapper footer.linear article:nth-of-type(1) .blue, body #wrapper header.linear article:nth-of-type(1) .blue {
+        background: linear-gradient(to bottom, #3d00f4, white); }
+      body #wrapper section.linear article:nth-of-type(1) .green, body #wrapper footer.linear article:nth-of-type(1) .green, body #wrapper header.linear article:nth-of-type(1) .green {
+        background: linear-gradient(to bottom, #00470d, white); }
+      body #wrapper section.linear article:nth-of-type(1) .yellow, body #wrapper footer.linear article:nth-of-type(1) .yellow, body #wrapper header.linear article:nth-of-type(1) .yellow {
+        background: linear-gradient(to bottom, #faff00, white); }
+      body #wrapper section.linear article:nth-of-type(1) .orange, body #wrapper footer.linear article:nth-of-type(1) .orange, body #wrapper header.linear article:nth-of-type(1) .orange {
+        background: linear-gradient(to bottom, #febf01, white); }
+      body #wrapper section.linear article:nth-of-type(1) .red, body #wrapper footer.linear article:nth-of-type(1) .red, body #wrapper header.linear article:nth-of-type(1) .red {
+        background: linear-gradient(to bottom, #d80202, white); }
+      body #wrapper section.linear article:nth-of-type(2) .purple, body #wrapper footer.linear article:nth-of-type(2) .purple, body #wrapper header.linear article:nth-of-type(2) .purple {
+        background: linear-gradient(to right, #3c003f, white); }
+      body #wrapper section.linear article:nth-of-type(2) .blue, body #wrapper footer.linear article:nth-of-type(2) .blue, body #wrapper header.linear article:nth-of-type(2) .blue {
+        background: linear-gradient(to right, #3d00f4, white); }
+      body #wrapper section.linear article:nth-of-type(2) .green, body #wrapper footer.linear article:nth-of-type(2) .green, body #wrapper header.linear article:nth-of-type(2) .green {
+        background: linear-gradient(to right, #00470d, white); }
+      body #wrapper section.linear article:nth-of-type(2) .yellow, body #wrapper footer.linear article:nth-of-type(2) .yellow, body #wrapper header.linear article:nth-of-type(2) .yellow {
+        background: linear-gradient(to right, #faff00, white); }
+      body #wrapper section.linear article:nth-of-type(2) .orange, body #wrapper footer.linear article:nth-of-type(2) .orange, body #wrapper header.linear article:nth-of-type(2) .orange {
+        background: linear-gradient(to right, #febf01, white); }
+      body #wrapper section.linear article:nth-of-type(2) .red, body #wrapper footer.linear article:nth-of-type(2) .red, body #wrapper header.linear article:nth-of-type(2) .red {
+        background: linear-gradient(to right, #d80202, white); }
+      body #wrapper section.linear article:nth-of-type(3) .purple, body #wrapper footer.linear article:nth-of-type(3) .purple, body #wrapper header.linear article:nth-of-type(3) .purple {
+        background: linear-gradient(135deg, #3c003f, white); }
+      body #wrapper section.linear article:nth-of-type(3) .blue, body #wrapper footer.linear article:nth-of-type(3) .blue, body #wrapper header.linear article:nth-of-type(3) .blue {
+        background: linear-gradient(135deg, #3d00f4, white); }
+      body #wrapper section.linear article:nth-of-type(3) .green, body #wrapper footer.linear article:nth-of-type(3) .green, body #wrapper header.linear article:nth-of-type(3) .green {
+        background: linear-gradient(135deg, #00470d, white); }
+      body #wrapper section.linear article:nth-of-type(3) .yellow, body #wrapper footer.linear article:nth-of-type(3) .yellow, body #wrapper header.linear article:nth-of-type(3) .yellow {
+        background: linear-gradient(135deg, #faff00, white); }
+      body #wrapper section.linear article:nth-of-type(3) .orange, body #wrapper footer.linear article:nth-of-type(3) .orange, body #wrapper header.linear article:nth-of-type(3) .orange {
+        background: linear-gradient(135deg, #febf01, white); }
+      body #wrapper section.linear article:nth-of-type(3) .red, body #wrapper footer.linear article:nth-of-type(3) .red, body #wrapper header.linear article:nth-of-type(3) .red {
+        background: linear-gradient(135deg, #d80202, white); }
+      body #wrapper section.radial article:nth-of-type(1) .purple, body #wrapper footer.radial article:nth-of-type(1) .purple, body #wrapper header.radial article:nth-of-type(1) .purple {
+        background: radial-gradient(ellipse at center, #3c003f, white); }
+      body #wrapper section.radial article:nth-of-type(1) .blue, body #wrapper footer.radial article:nth-of-type(1) .blue, body #wrapper header.radial article:nth-of-type(1) .blue {
+        background: radial-gradient(ellipse at center, #3d00f4, white); }
+      body #wrapper section.radial article:nth-of-type(1) .green, body #wrapper footer.radial article:nth-of-type(1) .green, body #wrapper header.radial article:nth-of-type(1) .green {
+        background: radial-gradient(ellipse at center, #00470d, white); }
+      body #wrapper section.radial article:nth-of-type(1) .yellow, body #wrapper footer.radial article:nth-of-type(1) .yellow, body #wrapper header.radial article:nth-of-type(1) .yellow {
+        background: radial-gradient(ellipse at center, #faff00, white); }
+      body #wrapper section.radial article:nth-of-type(1) .orange, body #wrapper footer.radial article:nth-of-type(1) .orange, body #wrapper header.radial article:nth-of-type(1) .orange {
+        background: radial-gradient(ellipse at center, #febf01, white); }
+      body #wrapper section.radial article:nth-of-type(1) .red, body #wrapper footer.radial article:nth-of-type(1) .red, body #wrapper header.radial article:nth-of-type(1) .red {
+        background: radial-gradient(ellipse at center, #d80202, white); }
+
+/*# sourceMappingURL=styles.css.map */

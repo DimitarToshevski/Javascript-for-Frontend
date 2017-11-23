@@ -1,0 +1,14 @@
+body {
+  background: #ff8c9b;
+  height: 700px; }
+  body button {
+    width: 100px;
+    height: 60px;
+    background-color: mediumpurple;
+    border-radius: 50px; }
+    body button:hover {
+      width: 110px;
+      height: 65px;
+      border: 2px solid darkred; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+.darts {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  font-size: 25px;
+  text-align: center; }
+  .darts span {
+    display: block;
+    padding-top: 12px; }
+  .darts .brown-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: brown; }
+  .darts .blue-circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: blue; }
+  .darts .green-circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: green; }
+  .darts .yellow-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background-color: yellow; }
+  .darts .red-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-color: red; }
+    .darts .red-circle span {
+      padding: 0;
+      line-height: 200px; }
+
+/*# sourceMappingURL=styles.css.map */

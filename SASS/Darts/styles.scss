@@ -1,0 +1,72 @@
+$span-color: white;
+$brown: brown;
+$blue: blue;
+$green: green;
+$yellow: yellow;
+$red: red;
+
+@mixin size($width,$height) {
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}
+
+@mixin positionOfCircle($top,$left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+.darts {
+  @include size(600px, 600px);
+
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+
+  span {
+    display: block;
+    padding-top: 12px;
+  }
+
+  .brown-circle {
+    @include positionOfCircle(0, 0);
+    @include size(600px, 600px);
+
+    background-color: $brown;
+  }
+
+  .blue-circle {
+    @include size(500px, 500px);
+    @include positionOfCircle(50px, 50px);
+
+    background-color: $blue;
+  }
+
+  .green-circle {
+    @include size(400px, 400px);
+    @include positionOfCircle(100px, 100px);
+
+    background-color: $green;
+  }
+
+  .yellow-circle {
+    @include size(300px, 300px);
+    @include positionOfCircle(150px, 150px);
+
+    background-color: $yellow;
+  }
+
+  .red-circle {
+    @include size(200px, 200px);
+    @include positionOfCircle(200px, 200px);
+
+    span{
+      padding: 0;
+      line-height: 200px;
+    }
+    background-color: $red;
+  }
+}

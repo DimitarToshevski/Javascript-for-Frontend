@@ -1,0 +1,25 @@
+#wrapper {
+  padding: 50px;
+  background-color: #3c3f49; }
+  #wrapper a {
+    text-decoration: none;
+    color: #a5a5a5; }
+    #wrapper a:hover {
+      color: #ff920b; }
+  #wrapper .card-img-top {
+    border-radius: 20% 20% 0 0;
+    height: 220px; }
+  #wrapper .myCard {
+    background-color: #00470d;
+    width: 300px;
+    border-radius: 20%; }
+  #wrapper #next {
+    right: 10px;
+    top: 250px; }
+  #wrapper .slick-prev {
+    left: 10px;
+    top: 250px; }
+  #wrapper .slick-dots {
+    color: white; }
+
+/*# sourceMappingURL=styles.css.map */

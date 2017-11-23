@@ -1,0 +1,27 @@
+.container {
+  width: 50%;
+  h1 {
+    color: #993333;
+  }
+  .card-header {
+    background-color: #993333;
+    padding: 0;
+    height: 3em;
+    a, a:hover {
+      display: block;
+      text-decoration: none;
+      cursor: default;
+      color: white;
+      height: 3em;
+      margin-left: 1em;
+      margin-top: 0.5em;
+    }
+  }
+  .card-body {
+    padding-bottom: 0;
+    color: #993333;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+  }
+}

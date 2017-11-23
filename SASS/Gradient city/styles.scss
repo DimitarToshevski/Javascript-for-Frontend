@@ -1,0 +1,245 @@
+$grey: rgba(165, 165, 165, 1);
+$purple: rgba(60, 0, 63, 1);
+$blue: rgba(61, 0, 244, 1);
+$green: rgba(0, 71, 13, 1);
+$yellow: rgba(250,255,0,1);
+$orange: rgba(254,191,1,1);
+$red: rgba(216,2,2,1);
+$white: rgba(255, 255, 255, 1);
+
+@mixin styleH1H3 {
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+@mixin verticalGradient($direction, $startColor, $endColor) {
+  background: linear-gradient($direction, $startColor, $endColor);
+}
+
+@mixin radialGradient($direction, $startColor, $endColor) {
+  background: radial-gradient($direction, $startColor, $endColor);
+}
+
+@mixin doubleBorder($size) {
+  border: $size double grey;
+}
+
+body {
+  @include verticalGradient(to bottom, $grey, $white);
+
+  #wrapper {
+    @include doubleBorder(3px);
+
+    width: 1224px;
+    height: 1530px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+
+    header, footer{
+      h1, h2, h3 {
+        color: grey;
+      }
+    }
+
+    ul {
+      list-style: none;
+    }
+    a{
+      font-size: 20px;
+      color: grey;
+      text-decoration: none;
+    }
+    nav {
+      ul {
+        li {
+          display: inline-block;
+          padding: 5px 15px;
+          a {
+            @include doubleBorder(3px);
+
+            width: 100px;
+            height: 35px;
+            display: block;
+            line-height: 35px;
+
+            &:hover {
+              @include verticalGradient(to bottom, $grey, $white);
+
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    section, footer, header {
+      @include doubleBorder(2.5px);
+      margin: 15px;
+      header{
+        border: none;
+        & h1 {
+          @include styleH1H3;
+        }
+      }
+
+      h1{
+        font-size: 40px;
+      }
+
+      h3 {
+        @include styleH1H3;
+      }
+
+      h2 {
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      article {
+        border: 1px solid $grey;
+
+        margin: 15px;
+
+
+        .innerContainer {
+          display: flex;
+          justify-content: center;
+          margin: 15px;
+
+          div {
+            height: 180px;
+            width: 140px;
+            border-radius: 15%;
+          }
+
+        }
+
+
+      }
+      &.linear article {
+        &:nth-of-type(1) {
+          $direction: to bottom;
+          .purple {
+            @include verticalGradient($direction, $purple, $white);
+          }
+
+          .blue {
+            @include verticalGradient($direction, $blue, $white);
+          }
+
+          .green {
+            @include verticalGradient($direction, $green, $white);
+          }
+
+          .yellow {
+            @include verticalGradient($direction, $yellow, $white);
+          }
+
+          .orange {
+            @include verticalGradient($direction, $orange, $white);
+          }
+
+          .red {
+            @include verticalGradient($direction, $red, $white);
+          }
+
+        }
+
+        &:nth-of-type(2) {
+          $direction: to right;
+          .purple {
+            @include verticalGradient($direction, $purple, rgba(255, 255, 255, 1));
+          }
+
+          .blue {
+            @include verticalGradient($direction, $blue, rgba(255, 255, 255, 1));
+          }
+
+          .green {
+            @include verticalGradient($direction, $green, rgba(255, 255, 255, 1));
+          }
+
+          .yellow {
+            @include verticalGradient($direction, $yellow, rgba(255, 255, 255, 1));
+          }
+
+          .orange {
+            @include verticalGradient($direction, $orange, rgba(255, 255, 255, 1));
+          }
+
+          .red {
+            @include verticalGradient($direction, $red, rgba(255, 255, 255, 1));
+          }
+
+        }
+
+        &:nth-of-type(3) {
+          $direction: 135deg;
+          .purple {
+            @include verticalGradient($direction, $purple, rgba(255, 255, 255, 1));
+          }
+
+          .blue {
+            @include verticalGradient($direction, $blue, rgba(255, 255, 255, 1));
+          }
+
+          .green {
+            @include verticalGradient($direction, $green, rgba(255, 255, 255, 1));
+          }
+
+          .yellow {
+            @include verticalGradient($direction, $yellow, rgba(255, 255, 255, 1));
+          }
+
+          .orange {
+            @include verticalGradient($direction, $orange, rgba(255, 255, 255, 1));
+          }
+
+          .red {
+            @include verticalGradient($direction, $red, rgba(255, 255, 255, 1));
+          }
+
+        }
+      }
+
+      &.radial article {
+        &:nth-of-type(1) {
+          $direction: ellipse at center;
+          .purple {
+            @include radialGradient($direction, $purple, $white);
+          }
+
+          .blue {
+            @include  radialGradient($direction, $blue, $white);
+          }
+
+          .green {
+            @include  radialGradient($direction, $green, $white);
+          }
+
+          .yellow {
+            @include  radialGradient($direction, $yellow, $white);
+          }
+
+          .orange {
+            @include  radialGradient($direction, $orange, $white);
+          }
+
+          .red {
+            @include  radialGradient($direction, $red, $white);
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+
+

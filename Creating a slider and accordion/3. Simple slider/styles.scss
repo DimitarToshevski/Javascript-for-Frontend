@@ -1,0 +1,32 @@
+#wrapper {
+  padding: 50px;
+  background-color: #3c3f49;
+  a {
+    text-decoration: none;
+    color: #a5a5a5;
+    &:hover {
+      color: #ff920b;
+    }
+  }
+  .card-img-top {
+    border-radius: 20% 20% 0 0;
+    height: 220px;
+  }
+
+  .myCard {
+    background-color: #00470d;
+    width: 300px;
+    border-radius: 20%;
+  }
+  #next {
+    right: 10px;
+    top: 250px;
+  }
+  .slick-prev {
+    left: 10px;
+    top: 250px;
+  }
+  .slick-dots {
+    color: white;
+  }
+}
